@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <!-- css interno -->
+     <style>
+        th,td{
+            border: 1px solid black;
+        }
+
+        tfoot{
+            background-color: aquamarine;
+        }
+     </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <!-- Engloba toda estrutura da tabela -->
+    <table> 
+        <!--thead Cabeçalho, contem a estrutura - tem as colunas  -->
+         <thead>
+            <!-- tag tr é uma linha -->
+            <tr>
+                <!-- Cada coluna do cabeçalho -->
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+         </thead>
+
+         <!-- Estrutura dos dados -->
+          <tbody>
+            <!-- Uma única linha -->
+            <tr>
+                <td>Produto 01</td>
+                <td>2</td>
+                <td>R$ 5,00</td>
+                <td >Sim</td> 
+            </tr>
+            <tr>
+                <td>Produto 02</td>
+                <td>5</td>
+                <td>R$ 10,00</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td>Produto 03</td>
+                <td>3</td>
+                <td>R$ 15,00</td>
+                <td>Não</td>
+            </tr>
+          </tbody>
+
+          <!-- tag de rodapé da tabela -->
+           <tfoot>
+            <tr>
+                <!-- colspan="3", espande a coluna  -->
+                <td colspan="3">Total</td>
+                <td>R$ 30,00</td>
+            </tr>
+           </tfoot>
+    </table>
+
+    <h2>Tabelas Com atributos</h2>
+    <!-- Engloba toda estrutura da tabela -->
+    <table> 
+        <!--thead Cabeçalho, contem a estrutura - tem as colunas  -->
+         <thead>
+            <!-- tag tr é uma linha -->
+            <tr>
+                <!-- Cada coluna do cabeçalho -->
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+         </thead>
+
+         <!-- Estrutura dos dados -->
+          <tbody>
+            <!-- Uma única linha -->
+            <tr>
+                <td>Produto 01</td>
+                <td>2</td>
+                <td>R$ 5,00</td>
+                <td rowspan="2">Sim</td> <!--rowspan="2" espande linhas-->
+            </tr>
+            <tr>
+                <td>Produto 02</td>
+                <td>5</td>
+                <td>R$ 10,00</td>
+                <!-- <td>Sim</td> -->
+            </tr>
+            <tr>
+                <td>Produto 03</td>
+                <td>3</td>
+                <td>R$ 15,00</td>
+                <td>Não</td>
+            </tr>
+          </tbody>
+
+          <!-- tag de rodapé da tabela -->
+           <tfoot>
+            <tr>
+                <!-- colspan="3", espande a coluna  -->
+                <td colspan="3">Total</td>
+                <td>R$ 30,00</td>
+            </tr>
+           </tfoot>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
